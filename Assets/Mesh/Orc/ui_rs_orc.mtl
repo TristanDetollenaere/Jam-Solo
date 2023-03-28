@@ -1,0 +1,15 @@
+newmtl mat_orcmaleskinarmor
+illum 1
+map_Kd orcmaleskinarmor.png
+newmtl mat_helmplate03_orm
+illum 1
+map_Kd helmplate03_orm.png
+newmtl mat_shoulderplate03_orm
+illum 1
+map_Kd shoulderplate03_orm.png
+newmtl mat_spike
+illum 1
+map_Kd spike.png
+newmtl mat_axe
+illum 1
+map_Kd axe.png

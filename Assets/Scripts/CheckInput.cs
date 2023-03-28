@@ -12,7 +12,7 @@ public class CheckInput : MonoBehaviour
     private string nameSlice;
     private string passSlice;
     public GameObject FadeOut;
-    public GameObject FadeIn;
+    public GameObject Error;
 
     private void Start()
     {
@@ -52,20 +52,19 @@ public class CheckInput : MonoBehaviour
         }
         else
         {
-            Debug.Log("Problème, il y a pas de nom de compte ou de mot de passe !");
+            Error.SetActive(true);
         }
     }
 
 
     IEnumerator waiting()
     {
-        yield return new WaitForSeconds(2);
-        FadeIn.SetActive(false);
+        yield return new WaitForSeconds(1);
     }
     IEnumerator fade()
     {
         FadeOut.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(1);
     }
 }

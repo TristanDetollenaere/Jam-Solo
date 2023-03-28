@@ -13,7 +13,7 @@ public class Selection : MonoBehaviour
         
     IEnumerator Waiting()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         fadein.SetActive(false);
     }
 }

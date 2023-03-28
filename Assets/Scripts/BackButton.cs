@@ -16,7 +16,7 @@ public class BackButton : MonoBehaviour
     IEnumerator fade()
     {
         FadeOut.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneName);
     }
 }
